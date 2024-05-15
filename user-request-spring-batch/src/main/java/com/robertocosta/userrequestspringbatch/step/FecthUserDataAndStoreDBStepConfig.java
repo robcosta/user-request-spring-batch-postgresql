@@ -13,7 +13,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import com.robertocosta.userrequestspringbatch.dto.UserDTO;
 
 @Configuration
-public class FacthUserDataAndStoreDBStepConfig {
+public class FecthUserDataAndStoreDBStepConfig {
 	
 	@Autowired
 	private PlatformTransactionManager transactionManager;
