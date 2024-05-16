@@ -14,9 +14,9 @@ import org.springframework.context.annotation.Configuration;
 public class JobConfig {
 
 	private static Logger logger = LoggerFactory.getLogger(JobConfig.class);
-	
-	@Bean
-	public Job job(JobRepository jobRepository, Step facthUserDataAndStoreDBStep) {
+
+    @Bean
+    Job job(JobRepository jobRepository, Step facthUserDataAndStoreDBStep) {
 		
 		logger.info("Start job execution ...");
 		

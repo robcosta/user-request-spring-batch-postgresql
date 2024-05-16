@@ -85,6 +85,7 @@ public class FetchUserDataReaderConfig implements ItemReader<UserDTO> {
 	
 	@AfterChunk
 	public void afterChunk(ChunkContext chuncContext) {
+		logger.info("Final chunck");
 		incrementPage();
 		userIndex = 0;
 		users = new ArrayList<>();
